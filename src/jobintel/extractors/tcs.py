@@ -34,7 +34,6 @@ from ..normalize import (
     extract_salary,
     infer_work_arrangement,
     is_india_location,
-    make_record_hash,
     normalize_employment_type,
     parse_location,
 )
@@ -252,9 +251,6 @@ class TCSExtractor(BaseExtractor):
             currency=currency,
             job_status="Active",
             job_url=f"{self.base}/{self.locale}/jobs/{job_id}",
-        )
-        posting.source_record_hash = make_record_hash(
-            posting.source_company_slug, job_id, posting.job_title, location
         )
         return posting
 

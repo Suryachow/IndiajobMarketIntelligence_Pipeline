@@ -145,7 +145,6 @@ class TestGenericCrawler(unittest.TestCase):
                          ("400000", "600000", "INR"))
         self.assertEqual(posting.source_platform, "generic")
         self.assertEqual(posting.job_url, INDIA_URL)
-        self.assertTrue(posting.source_record_hash)
 
     def test_expired_posting_excluded(self):
         expired = dict(INDIA_POSTING, validThrough="2020-01-01")

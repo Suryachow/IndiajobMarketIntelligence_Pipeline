@@ -22,7 +22,7 @@ from jobintel.history import (  # noqa: E402
 from jobintel.schema import JobPosting  # noqa: E402
 
 
-def _posting(job_id: str, title: str, record_hash: str) -> JobPosting:
+def _posting(job_id: str, title: str) -> JobPosting:
     return JobPosting(
         company_name="Acme",
         industry="Technology",
@@ -30,31 +30,29 @@ def _posting(job_id: str, title: str, record_hash: str) -> JobPosting:
         job_title=title,
         job_location="Bengaluru, India",
         job_url=f"https://example.test/{job_id}",
-        source_company_slug="acme",
-        source_record_hash=record_hash,
     )
 
 
 class TestPostingKey(unittest.TestCase):
     def test_prefers_slug_and_job_id(self):
-        self.assertEqual(posting_key(_posting("R1", "Engineer", "h")), "acme:R1")
+        self.assertEqual(posting_key(_posting("R1", "Engineer")), "acme:R1")
 
     def test_falls_back_to_url(self):
-        posting = _posting("", "Engineer", "h")
+        posting = _posting("", "Engineer")
         self.assertEqual(posting_key(posting), "acme:https://example.test/")
 
 
 class TestDiffSnapshots(unittest.TestCase):
     def test_classifies_new_modified_closed(self):
         previous = {"postings": snapshot_records([
-            _posting("R1", "Engineer", "hash-1"),   # unchanged
-            _posting("R2", "Analyst", "hash-2"),    # modified below
-            _posting("R3", "Recruiter", "hash-3"),  # closed (absent from current)
+            _posting("R1", "Engineer"),   # unchanged
+            _posting("R2", "Analyst"),    # modified below
+            _posting("R3", "Recruiter"),  # closed (absent from current)
         ])}
         current = {"postings": snapshot_records([
-            _posting("R1", "Engineer", "hash-1"),
-            _posting("R2", "Senior Analyst", "hash-2b"),
-            _posting("R4", "Designer", "hash-4"),   # new
+            _posting("R1", "Engineer"),
+            _posting("R2", "Senior Analyst"),
+            _posting("R4", "Designer"),   # new
         ])}
 
         changes = diff_snapshots(previous, current, compared_to="2026-11-10")
@@ -67,7 +65,7 @@ class TestDiffSnapshots(unittest.TestCase):
         self.assertEqual(changes["modified"][0]["after"]["job_title"], "Senior Analyst")
 
     def test_first_run_is_baseline(self):
-        current = {"postings": snapshot_records([_posting("R1", "Engineer", "h")])}
+        current = {"postings": snapshot_records([_posting("R1", "Engineer")])}
         changes = diff_snapshots(None, current)
         self.assertTrue(changes["baseline"])
         self.assertEqual(changes["counts"]["new"], 0)
@@ -77,8 +75,8 @@ class TestDiffSnapshots(unittest.TestCase):
 class TestSnapshotStore(unittest.TestCase):
     def test_roundtrip_and_latest_before(self):
         with tempfile.TemporaryDirectory() as directory:
-            save_snapshot([_posting("R1", "Engineer", "h")], directory, "2026-11-10")
-            save_snapshot([_posting("R2", "Analyst", "h2")], directory, "2026-11-11")
+            save_snapshot([_posting("R1", "Engineer")], directory, "2026-11-10")
+            save_snapshot([_posting("R2", "Analyst")], directory, "2026-11-11")
 
             self.assertEqual(len(list_snapshots(directory)), 2)
             path, snapshot = latest_snapshot_before(directory, "2026-11-11")

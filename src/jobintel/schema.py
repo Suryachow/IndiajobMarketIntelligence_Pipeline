@@ -96,8 +96,6 @@ class JobPosting:
     job_family: str = ""
     seniority_level: str = ""
     source_platform: str = ""
-    source_company_slug: str = ""
-    source_record_hash: str = ""
 
     def to_row(self) -> Dict[str, Any]:
         """Return a CSV-ready dict containing exactly ``CSV_FIELDS`` keys."""

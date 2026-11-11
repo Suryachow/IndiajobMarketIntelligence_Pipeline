@@ -76,8 +76,6 @@ class BaseExtractor(ABC):
             industry=self.company.get("industry", ""),
             extraction_date=self.extraction_date,
             source_platform=self.platform,
-            source_company_slug=self.company.get("slug")
-            or self.company["company_name"].lower(),
             **kwargs,
         )
         return posting

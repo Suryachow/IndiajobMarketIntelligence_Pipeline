@@ -15,7 +15,6 @@ from ..normalize import (
     extract_experience,
     extract_salary,
     infer_work_arrangement,
-    make_record_hash,
     map_workplace_type,
     normalize_employment_type,
     parse_location,
@@ -136,9 +135,6 @@ class SmartRecruitersExtractor(BaseExtractor):
             posting_date=parse_posting_date(item.get("releasedDate")),
             job_status="Active",
             job_url=job_url,
-        )
-        posting.source_record_hash = make_record_hash(
-            posting.source_company_slug, posting.job_id, posting.job_title, posting.job_location
         )
         return posting
 

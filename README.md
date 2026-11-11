@@ -293,7 +293,7 @@ only on explicit textual signals, so the output stays auditable against the sour
 and every removal is counted for auditability:
 
 1. **Exact content hash** — identical `(company, requisition id, title, location)`
-   (`source_record_hash`).
+   (a derived internal content hash).
 2. **Business key** — `(company, requisition id)` when the employer exposes a requisition ID.
 3. **Fuzzy key** — `(company, normalized title, primary city)` for postings with **no** usable ID
    (normalized title lowercases, strips bracketed text, punctuation and boilerplate such as
@@ -526,7 +526,7 @@ services, no third-party packages.
 ### 1–3 · Refresh, change detection & history
 
 Each run writes a **snapshot** of the consolidated dataset keyed by a stable business key
-(`<source_company_slug>:<job_id>`) plus the per-posting `source_record_hash`. The next run loads
+(`<company-slug>:<job_id>`) plus a derived internal content hash. The next run loads
 the most recent *earlier* snapshot, diffs it against the current output, and classifies every
 posting as **new**, **modified** (same key, changed content hash), or **closed** (present in the
 snapshot, absent now):

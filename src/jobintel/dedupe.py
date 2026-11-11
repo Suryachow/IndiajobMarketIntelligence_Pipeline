@@ -18,7 +18,7 @@ from __future__ import annotations
 
 from typing import Dict, List, Tuple
 
-from .normalize import normalize_title, slugify
+from .normalize import make_record_hash, normalize_title, slugify
 from .schema import JobPosting
 
 
@@ -30,12 +30,12 @@ def deduplicate(postings: List[JobPosting]) -> Tuple[List[JobPosting], Dict[str,
     stats = {"input": len(postings), "removed_exact_hash": 0, "removed_business_key": 0, "removed_fuzzy": 0}
 
     for posting in postings:
-        h = posting.source_record_hash
+        company_slug = slugify(posting.company_name)
+        h = make_record_hash(company_slug, posting.job_id, posting.job_title, posting.job_location)
         if h and h in seen_hashes:
             stats["removed_exact_hash"] += 1
             continue
 
-        company_slug = posting.source_company_slug or slugify(posting.company_name)
         business_key = ""
         if posting.job_id:
             business_key = f"{company_slug}::{posting.job_id.strip().lower()}"

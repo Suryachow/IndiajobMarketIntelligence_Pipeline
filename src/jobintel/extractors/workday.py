@@ -30,7 +30,6 @@ from ..normalize import (
     extract_salary,
     infer_work_arrangement,
     is_india_location,
-    make_record_hash,
     map_workplace_type,
     normalize_employment_type,
     parse_location,
@@ -235,9 +234,6 @@ class WorkdayExtractor(BaseExtractor):
             posting_date=parse_posting_date(detail.get("startDate") or detail.get("postedOn")),
             job_status=status,
             job_url=job_url,
-        )
-        posting.source_record_hash = make_record_hash(
-            posting.source_company_slug, posting.job_id, posting.job_title, posting.job_location
         )
         return posting
 

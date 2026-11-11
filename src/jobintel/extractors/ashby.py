@@ -21,7 +21,6 @@ from ..normalize import (
     extract_salary,
     infer_work_arrangement,
     is_india_location,
-    make_record_hash,
     normalize_employment_type,
     parse_location,
     parse_posting_date,
@@ -129,9 +128,6 @@ class AshbyExtractor(BaseExtractor):
             posting_date=parse_posting_date(item.get("publishedAt")),
             job_status="Active",
             job_url=item.get("jobUrl", ""),
-        )
-        posting.source_record_hash = make_record_hash(
-            posting.source_company_slug, posting.job_id, posting.job_title, posting.job_location
         )
         return posting
 

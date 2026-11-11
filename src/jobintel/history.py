@@ -18,6 +18,7 @@ import json
 import os
 from typing import Any, Dict, List, Optional, Tuple
 
+from .normalize import make_record_hash, slugify
 from .schema import JobPosting
 
 # Fields captured per posting in a snapshot (enough to describe and diff a job).
@@ -39,7 +40,6 @@ SNAPSHOT_FIELDS = (
     "posting_date",
     "job_status",
     "job_url",
-    "source_record_hash",
 )
 
 
@@ -49,7 +49,7 @@ def posting_key(posting: JobPosting) -> str:
     Prefers ``<company_slug>:<job_id>``; falls back to the job URL when no
     requisition id is published.
     """
-    company = (posting.source_company_slug or posting.company_name or "").strip().lower()
+    company = slugify(posting.company_name)
     ident = (posting.job_id or "").strip() or (posting.job_url or "").strip()
     return f"{company}:{ident}"
 
@@ -58,7 +58,11 @@ def snapshot_records(postings: List[JobPosting]) -> Dict[str, Dict[str, Any]]:
     """Return ``{key: record}`` for the given postings."""
     records: Dict[str, Dict[str, Any]] = {}
     for posting in postings:
+        company = slugify(posting.company_name)
         record = {field: str(getattr(posting, field, "") or "") for field in SNAPSHOT_FIELDS}
+        record["_record_hash"] = make_record_hash(
+            company, posting.job_id, posting.job_title, posting.job_location
+        )
         records[posting_key(posting)] = record
     return records
 
@@ -140,7 +144,7 @@ def diff_snapshots(
         old = prev_map.get(key)
         if old is None:
             new.append({"key": key, **record})
-        elif old.get("source_record_hash") != record.get("source_record_hash"):
+        elif old.get("_record_hash") != record.get("_record_hash"):
             modified.append({"key": key, "before": old, "after": record})
         else:
             unchanged += 1

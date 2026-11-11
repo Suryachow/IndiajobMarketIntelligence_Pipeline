@@ -33,8 +33,6 @@ def _posting(job_id, company, title, location, family="Engineering", seniority="
         job_url=f"https://example.test/{job_id}",
         extraction_date="2026-11-11",
         source_platform="workday",
-        source_company_slug=company.lower(),
-        source_record_hash=f"hash-{job_id}",
     )
 
 

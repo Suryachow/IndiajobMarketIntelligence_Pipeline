@@ -41,7 +41,7 @@ Beyond the core requirements, every optional capability is implemented and produ
 
 - **Automated daily refresh** — runs are idempotent and cached; schedule `py run.py` daily.
 - **New / modified / closed detection** — each run writes a JSON snapshot keyed on
-  `(company_slug, job_id)` + `source_record_hash`, diffs it against the previous snapshot, and
+  `(company_slug, job_id)` plus a derived content hash, diffs it against the previous snapshot, and
   emits a change report (`history/changes/changes_<date>.{json,md}`).
 - **Historical records** — timestamped snapshots under `history/snapshots/` preserve the state of
   the dataset over time (no database required).

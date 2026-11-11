@@ -18,7 +18,6 @@ from ..normalize import (
     extract_salary,
     infer_work_arrangement,
     is_india_location,
-    make_record_hash,
     map_workplace_type,
     normalize_employment_type,
     parse_location,
@@ -115,9 +114,6 @@ class LeverExtractor(BaseExtractor):
             posting_date=_from_millis(item.get("createdAt")) or parse_posting_date(item.get("createdAt")),
             job_status="Active",
             job_url=item.get("hostedUrl", ""),
-        )
-        posting.source_record_hash = make_record_hash(
-            posting.source_company_slug, posting.job_id, posting.job_title, posting.job_location
         )
         return posting
 
