@@ -1,0 +1,146 @@
+{
+  "$comment": "Company-name -> official (first-party) careers entry point. This is DATA, not code: add an employer here and the universal crawler can be driven by name alone. 'aliases' feed the fuzzy matcher; 'extractor' pins a typed adapter when one is known.",
+  "companies": [
+    {
+      "company_name": "Wipro",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://careers.wipro.com/",
+      "extractor": "wipro",
+      "aliases": ["wipro limited", "wipro technologies", "wipro ltd"]
+    },
+    {
+      "company_name": "Accenture",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://www.accenture.com/in-en/careers/jobsearch",
+      "extractor": "accenture",
+      "aliases": ["accenture plc", "accenture india", "accenture solutions"]
+    },
+    {
+      "company_name": "Infosys",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://www.infosys.com/careers/apply.html",
+      "aliases": ["infosys limited", "infosys ltd", "infosys bpm"]
+    },
+    {
+      "company_name": "HCLTech",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://www.hcltech.com/careers",
+      "aliases": ["hcl", "hcl technologies", "hcl tech", "hcltech"]
+    },
+    {
+      "company_name": "Cognizant",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://careers.cognizant.com/global/en",
+      "aliases": ["cognizant technology solutions", "cts"]
+    },
+    {
+      "company_name": "Capgemini",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://www.capgemini.com/in-en/careers/",
+      "aliases": ["capgemini india", "capgemini technology services"]
+    },
+    {
+      "company_name": "Tech Mahindra",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://careers.techmahindra.com/",
+      "aliases": ["techmahindra", "tech m", "mahindra satyam"]
+    },
+    {
+      "company_name": "LTIMindtree",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://www.ltimindtree.com/careers/",
+      "aliases": ["lti", "mindtree", "l&t infotech"]
+    },
+    {
+      "company_name": "IBM",
+      "industry": "IT Services & Cloud",
+      "careers_url": "https://www.ibm.com/careers/search",
+      "aliases": ["ibm india", "international business machines"]
+    },
+    {
+      "company_name": "Microsoft",
+      "industry": "Enterprise Software",
+      "careers_url": "https://jobs.careers.microsoft.com/global/en/search",
+      "aliases": ["msft", "microsoft india", "microsoft corporation"]
+    },
+    {
+      "company_name": "Google",
+      "industry": "Internet & Cloud",
+      "careers_url": "https://www.google.com/about/careers/applications/jobs/results/",
+      "aliases": ["alphabet", "google india"]
+    },
+    {
+      "company_name": "Deloitte",
+      "industry": "Professional Services",
+      "careers_url": "https://www2.deloitte.com/in/en/careers.html",
+      "aliases": ["deloitte india", "deloitte touche tohmatsu"]
+    },
+    {
+      "company_name": "Flipkart",
+      "industry": "E-commerce & Internet",
+      "careers_url": "https://www.flipkartcareers.com/#!/joblist",
+      "aliases": ["flipkart internet"]
+    },
+    {
+      "company_name": "Swiggy",
+      "industry": "Food Delivery & Internet",
+      "careers_url": "https://careers.swiggy.com/",
+      "aliases": ["bundl technologies", "swiggy india"]
+    },
+    {
+      "company_name": "PhonePe",
+      "industry": "Financial Technology (Fintech)",
+      "careers_url": "https://www.phonepe.com/careers/",
+      "aliases": ["phonepe india"]
+    },
+    {
+      "company_name": "HDFC Bank",
+      "industry": "Banking & Financial Services",
+      "careers_url": "https://www.hdfcbank.com/personal/about-us/careers",
+      "aliases": ["hdfc", "hdfc bank limited", "hdfc bank ltd"]
+    },
+    {
+      "company_name": "Tata Consultancy Services",
+      "industry": "Information Technology Services",
+      "careers_url": "https://ibegin.tcsapps.com/candidate/next/en-IN/landing",
+      "extractor": "tcs",
+      "aliases": ["tcs", "tata consultancy", "tata consultancy services limited"]
+    },
+    {
+      "company_name": "Microsoft India",
+      "industry": "Technology & Software",
+      "careers_url": "https://jobs.careers.microsoft.com/global/en/search",
+      "aliases": ["microsoft india", "ms india", "microsoft"]
+    },
+    {
+      "company_name": "Reliance Industries",
+      "industry": "Energy",
+      "careers_url": "https://careers.ril.com/",
+      "aliases": ["reliance", "ril", "reliance industries limited"]
+    },
+    {
+      "company_name": "Bharti Airtel",
+      "industry": "Telecommunications",
+      "careers_url": "https://www.airtel.in/careers",
+      "aliases": ["airtel", "bharti", "bharti airtel limited"]
+    },
+    {
+      "company_name": "Tata Motors",
+      "industry": "Automotive",
+      "careers_url": "https://careers.tatamotors.com/",
+      "aliases": ["tata motors limited", "tata motors ltd"]
+    },
+    {
+      "company_name": "Sun Pharmaceutical",
+      "industry": "Healthcare & Pharmaceuticals",
+      "careers_url": "https://careers.sunpharma.com/",
+      "aliases": ["sun pharma", "sun pharmaceutical industries", "sunpharma"]
+    },
+    {
+      "company_name": "Hindustan Unilever",
+      "industry": "Consumer Goods",
+      "careers_url": "https://www.hul.co.in/careers/",
+      "aliases": ["hul", "unilever", "hindustan unilever limited"]
+    }
+  ]
+}

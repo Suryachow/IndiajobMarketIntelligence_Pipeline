@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Pipeline artifacts (regenerate with `py run.py`)
+.cache/
+logs/
+*.log
+
+# Local scratch
+_dbg*.py
+_probe*.py

@@ -1,0 +1,10 @@
+# This project intentionally has NO third-party runtime dependencies.
+#
+# It runs on the Python standard library only (verified on CPython 3.14,
+# works on 3.9+). That keeps the solution reproducible on any machine with
+# Python installed and avoids supply-chain / build-toolchain risk.
+#
+# The lines below are optional developer conveniences only; nothing here is
+# required to run the pipeline.
+#
+# pytest>=7.0   # optional: nicer test runner (unittest works out of the box)

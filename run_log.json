@@ -1,0 +1,194 @@
+{
+  "started_at": "2026-11-11T13:42:35",
+  "finished_at": "2026-11-11T13:43:49",
+  "duration_seconds": 74.28,
+  "total_records": 4596,
+  "dedupe_stats": {
+    "input": 4626,
+    "removed_exact_hash": 29,
+    "removed_business_key": 1,
+    "removed_fuzzy": 0,
+    "output": 4596,
+    "removed_total": 30
+  },
+  "http_stats": {
+    "requests": 0,
+    "cache_hits": 1139,
+    "retries": 0,
+    "errors": 0
+  },
+  "companies": [
+    {
+      "company_name": "Amazon",
+      "industry": "E-commerce & Cloud Computing",
+      "platform": "amazon",
+      "careers_url": "https://www.amazon.jobs/en/",
+      "portal_total": 2102,
+      "portal_total_scope": "amazon.jobs search hits for country=IND",
+      "extracted": 2103,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "Listed 2103 postings (portal reports 2102)"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Barclays",
+      "industry": "Banking & Financial Services",
+      "platform": "workday",
+      "careers_url": "https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays",
+      "portal_total": 282,
+      "portal_total_scope": "postings matching India in locationsText",
+      "extracted": 282,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "No India facet discovered; falling back to full scan filtered on locationsText",
+        "Listed 282 India postings; fetching details"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Verizon",
+      "industry": "Telecommunications",
+      "platform": "workday",
+      "careers_url": "https://verizon.wd12.myworkdayjobs.com/verizon-careers",
+      "portal_total": 31,
+      "portal_total_scope": "Workday India facet total",
+      "extracted": 31,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "India facet strategy: 'locationMainGroup/Locations' (facet='locations', 3 value(s))",
+        "Listed 31 India postings; fetching details"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "NVIDIA",
+      "industry": "Semiconductors",
+      "platform": "workday",
+      "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+      "portal_total": 248,
+      "portal_total_scope": "Workday India facet total",
+      "extracted": 248,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "India facet strategy: 'locationMainGroup/Sites' (facet='locations', 6 value(s))",
+        "Listed 248 India postings; fetching details"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Cisco",
+      "industry": "Technology Hardware & Networking",
+      "platform": "workday",
+      "careers_url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers",
+      "portal_total": 297,
+      "portal_total_scope": "Workday India facet total",
+      "extracted": 297,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "India facet strategy: 'locationMainGroup/Locations' (facet='locations', 8 value(s))",
+        "Listed 297 India postings; fetching details"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Pfizer",
+      "industry": "Pharmaceuticals & Life Sciences",
+      "platform": "workday",
+      "careers_url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers",
+      "portal_total": 27,
+      "portal_total_scope": "Workday India facet total",
+      "extracted": 27,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "India facet strategy: 'country-facet' (facet='Location_Country', 1 value(s))",
+        "Listed 27 India postings; fetching details"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Salesforce",
+      "industry": "Enterprise Software",
+      "platform": "workday",
+      "careers_url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site",
+      "portal_total": 96,
+      "portal_total_scope": "Workday India facet total",
+      "extracted": 96,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "India facet strategy: 'country-facet' (facet='CF_-_REC_-_LRV_-_Job_Posting_Anchor_-_Country_from_Job_Posting_Location_Extended', 1 value(s))",
+        "Listed 96 India postings; fetching details"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Sutherland",
+      "industry": "IT Services & Business Process Management",
+      "platform": "smartrecruiters",
+      "careers_url": "https://jobs.smartrecruiters.com/Sutherland",
+      "portal_total": 52,
+      "portal_total_scope": "India postings found while scanning all 437 portal postings",
+      "extracted": 52,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "Scanned 437 postings; 52 located in India"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Groww",
+      "industry": "Financial Technology (Fintech)",
+      "platform": "greenhouse",
+      "careers_url": "https://boards.greenhouse.io/groww",
+      "portal_total": 9,
+      "portal_total_scope": "India postings returned by the full board payload",
+      "extracted": 9,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "Board returned 9 postings; 9 located in India"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Meesho",
+      "industry": "E-commerce & Internet",
+      "platform": "lever",
+      "careers_url": "https://jobs.lever.co/meesho",
+      "portal_total": 55,
+      "portal_total_scope": "India postings returned by the full postings payload",
+      "extracted": 55,
+      "coverage_pct": "100.0%",
+      "status": "OK",
+      "notes": [
+        "API returned 55 postings; 55 located in India"
+      ],
+      "errors": []
+    },
+    {
+      "company_name": "Tata Consultancy Services",
+      "industry": "IT Services & Consulting",
+      "platform": "tcs",
+      "careers_url": "https://ibegin.tcsapps.com/candidate/next/en-IN/landing",
+      "portal_total": 1436,
+      "portal_total_scope": "India postings returned by the iBegin search API (regular + walk-in)",
+      "extracted": 1426,
+      "coverage_pct": "99.3%",
+      "status": "OK",
+      "notes": [
+        "iBegin index returned 1436 posting(s) across 29 page(s)",
+        "skipped 10 non-India posting(s)"
+      ],
+      "errors": []
+    }
+  ]
+}

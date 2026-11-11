@@ -1,0 +1,837 @@
+{
+  "generated_at": "2026-11-11T13:43:49",
+  "total_postings": 4596,
+  "with_salary": 1,
+  "by_company": {
+    "label": "Company",
+    "rows": [
+      {
+        "value": "Amazon",
+        "count": 2102,
+        "share": 0.4574
+      },
+      {
+        "value": "Tata Consultancy Services",
+        "count": 1398,
+        "share": 0.3042
+      },
+      {
+        "value": "Cisco",
+        "count": 297,
+        "share": 0.0646
+      },
+      {
+        "value": "Barclays",
+        "count": 282,
+        "share": 0.0614
+      },
+      {
+        "value": "NVIDIA",
+        "count": 248,
+        "share": 0.054
+      },
+      {
+        "value": "Salesforce",
+        "count": 96,
+        "share": 0.0209
+      },
+      {
+        "value": "Meesho",
+        "count": 55,
+        "share": 0.012
+      },
+      {
+        "value": "Sutherland",
+        "count": 51,
+        "share": 0.0111
+      },
+      {
+        "value": "Verizon",
+        "count": 31,
+        "share": 0.0067
+      },
+      {
+        "value": "Pfizer",
+        "count": 27,
+        "share": 0.0059
+      },
+      {
+        "value": "Groww",
+        "count": 9,
+        "share": 0.002
+      }
+    ]
+  },
+  "by_industry": {
+    "label": "Industry",
+    "rows": [
+      {
+        "value": "E-commerce & Cloud Computing",
+        "count": 2102,
+        "share": 0.4574
+      },
+      {
+        "value": "IT Services & Consulting",
+        "count": 1398,
+        "share": 0.3042
+      },
+      {
+        "value": "Technology Hardware & Networking",
+        "count": 297,
+        "share": 0.0646
+      },
+      {
+        "value": "Banking & Financial Services",
+        "count": 282,
+        "share": 0.0614
+      },
+      {
+        "value": "Semiconductors",
+        "count": 248,
+        "share": 0.054
+      },
+      {
+        "value": "Enterprise Software",
+        "count": 96,
+        "share": 0.0209
+      },
+      {
+        "value": "E-commerce & Internet",
+        "count": 55,
+        "share": 0.012
+      },
+      {
+        "value": "IT Services & Business Process Management",
+        "count": 51,
+        "share": 0.0111
+      },
+      {
+        "value": "Telecommunications",
+        "count": 31,
+        "share": 0.0067
+      },
+      {
+        "value": "Pharmaceuticals & Life Sciences",
+        "count": 27,
+        "share": 0.0059
+      },
+      {
+        "value": "Financial Technology (Fintech)",
+        "count": 9,
+        "share": 0.002
+      }
+    ]
+  },
+  "by_location": {
+    "label": "State / Region",
+    "rows": [
+      {
+        "value": "Unknown",
+        "count": 4129,
+        "share": 0.8984
+      },
+      {
+        "value": "Gera Commerzone Sez",
+        "count": 168,
+        "share": 0.0366
+      },
+      {
+        "value": "Delhi",
+        "count": 62,
+        "share": 0.0135
+      },
+      {
+        "value": "Karnataka",
+        "count": 50,
+        "share": 0.0109
+      },
+      {
+        "value": "Maruthi Onyx - Tesco Tsa",
+        "count": 29,
+        "share": 0.0063
+      },
+      {
+        "value": "Dlf Downtown",
+        "count": 22,
+        "share": 0.0048
+      },
+      {
+        "value": "Nirlon Knowledge Park (Bx) 9Th & 11-12 Floor",
+        "count": 19,
+        "share": 0.0041
+      },
+      {
+        "value": "New Delhi",
+        "count": 17,
+        "share": 0.0037
+      },
+      {
+        "value": "Dlf It Park",
+        "count": 15,
+        "share": 0.0033
+      },
+      {
+        "value": "TS",
+        "count": 15,
+        "share": 0.0033
+      },
+      {
+        "value": "9Th Floor",
+        "count": 10,
+        "share": 0.0022
+      },
+      {
+        "value": "MH",
+        "count": 10,
+        "share": 0.0022
+      },
+      {
+        "value": "Candor Techspace",
+        "count": 8,
+        "share": 0.0017
+      },
+      {
+        "value": "//TS",
+        "count": 7,
+        "share": 0.0015
+      },
+      {
+        "value": "Altimus",
+        "count": 7,
+        "share": 0.0015
+      },
+      {
+        "value": "KA",
+        "count": 5,
+        "share": 0.0011
+      },
+      {
+        "value": "Maharashtra",
+        "count": 4,
+        "share": 0.0009
+      },
+      {
+        "value": "TN",
+        "count": 3,
+        "share": 0.0007
+      },
+      {
+        "value": "Tn",
+        "count": 3,
+        "share": 0.0007
+      },
+      {
+        "value": "//MH",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "KL",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "Mumbai",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "////TS",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Gujarat",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Kl",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "MP",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Mh",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Rajasthan",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Rangareddy",
+        "count": 1,
+        "share": 0.0002
+      }
+    ]
+  },
+  "by_city": {
+    "label": "City",
+    "rows": [
+      {
+        "value": "Bengaluru",
+        "count": 1554,
+        "share": 0.3381
+      },
+      {
+        "value": "Hyderabad",
+        "count": 688,
+        "share": 0.1497
+      },
+      {
+        "value": "Mumbai",
+        "count": 462,
+        "share": 0.1005
+      },
+      {
+        "value": "Chennai",
+        "count": 388,
+        "share": 0.0844
+      },
+      {
+        "value": "Bangalore",
+        "count": 371,
+        "share": 0.0807
+      },
+      {
+        "value": "Pune",
+        "count": 340,
+        "share": 0.074
+      },
+      {
+        "value": "Gurugram",
+        "count": 87,
+        "share": 0.0189
+      },
+      {
+        "value": "Unknown",
+        "count": 82,
+        "share": 0.0178
+      },
+      {
+        "value": "Trivandrum",
+        "count": 77,
+        "share": 0.0168
+      },
+      {
+        "value": "Virtual",
+        "count": 60,
+        "share": 0.0131
+      },
+      {
+        "value": "Kolkata",
+        "count": 53,
+        "share": 0.0115
+      },
+      {
+        "value": "Ncr",
+        "count": 53,
+        "share": 0.0115
+      },
+      {
+        "value": "India - Hyderabad",
+        "count": 50,
+        "share": 0.0109
+      },
+      {
+        "value": "India - Bangalore",
+        "count": 38,
+        "share": 0.0083
+      },
+      {
+        "value": "Hyderabad - Virtual",
+        "count": 35,
+        "share": 0.0076
+      },
+      {
+        "value": "Bangalore - Virtual",
+        "count": 29,
+        "share": 0.0063
+      },
+      {
+        "value": "Kochi",
+        "count": 24,
+        "share": 0.0052
+      },
+      {
+        "value": "Gurgaon",
+        "count": 19,
+        "share": 0.0041
+      },
+      {
+        "value": "Thane",
+        "count": 19,
+        "share": 0.0041
+      },
+      {
+        "value": "Ahmedabad",
+        "count": 16,
+        "share": 0.0035
+      },
+      {
+        "value": "India - Mumbai",
+        "count": 14,
+        "share": 0.003
+      },
+      {
+        "value": "Noida",
+        "count": 12,
+        "share": 0.0026
+      },
+      {
+        "value": "Gurgaon - Virtual",
+        "count": 10,
+        "share": 0.0022
+      },
+      {
+        "value": "Indore",
+        "count": 9,
+        "share": 0.002
+      },
+      {
+        "value": "Nagpur",
+        "count": 9,
+        "share": 0.002
+      },
+      {
+        "value": "India - Chennai",
+        "count": 8,
+        "share": 0.0017
+      },
+      {
+        "value": "India - Vizag",
+        "count": 8,
+        "share": 0.0017
+      },
+      {
+        "value": "Bengaluru-Vtp",
+        "count": 7,
+        "share": 0.0015
+      },
+      {
+        "value": "Navi Mumbai",
+        "count": 7,
+        "share": 0.0015
+      },
+      {
+        "value": "Na - Virtual",
+        "count": 6,
+        "share": 0.0013
+      },
+      {
+        "value": "Surat",
+        "count": 5,
+        "share": 0.0011
+      },
+      {
+        "value": "Lucknow",
+        "count": 4,
+        "share": 0.0009
+      },
+      {
+        "value": "Uttar Pradesh - Virtual",
+        "count": 4,
+        "share": 0.0009
+      },
+      {
+        "value": "Coimbatore",
+        "count": 3,
+        "share": 0.0007
+      },
+      {
+        "value": "Gandhinagar",
+        "count": 3,
+        "share": 0.0007
+      },
+      {
+        "value": "India - Gurgaon",
+        "count": 3,
+        "share": 0.0007
+      },
+      {
+        "value": "Mumbai - Virtual",
+        "count": 3,
+        "share": 0.0007
+      },
+      {
+        "value": "Patna",
+        "count": 3,
+        "share": 0.0007
+      },
+      {
+        "value": "Visakhapatnam",
+        "count": 3,
+        "share": 0.0007
+      },
+      {
+        "value": "Bhopal",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "Ceejay House",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "Eros Corporate Tower",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "Jaipur",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "Vadodara",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "Vishakapatnam",
+        "count": 2,
+        "share": 0.0004
+      },
+      {
+        "value": "Ananthapur",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Bellary",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Chennai - Virtual",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Dehradun",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Delhi",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Delhi Ncr",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "India - Delhi",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "India - Goa",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Jaipur - Virtual",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Janakpuri",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Kolkata - Virtual",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Ludhiana",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Manipal",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Mysore",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Salem",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Sangareddy",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Solapur",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Tumkur",
+        "count": 1,
+        "share": 0.0002
+      }
+    ]
+  },
+  "by_job_family": {
+    "label": "Job Family",
+    "rows": [
+      {
+        "value": "Engineering",
+        "count": 1317,
+        "share": 0.2866
+      },
+      {
+        "value": "Operations",
+        "count": 514,
+        "share": 0.1118
+      },
+      {
+        "value": "IT & Infrastructure",
+        "count": 406,
+        "share": 0.0883
+      },
+      {
+        "value": "Supply Chain & Logistics",
+        "count": 284,
+        "share": 0.0618
+      },
+      {
+        "value": "Data & Analytics",
+        "count": 249,
+        "share": 0.0542
+      },
+      {
+        "value": "Product",
+        "count": 245,
+        "share": 0.0533
+      },
+      {
+        "value": "Finance & Accounting",
+        "count": 227,
+        "share": 0.0494
+      },
+      {
+        "value": "Design",
+        "count": 189,
+        "share": 0.0411
+      },
+      {
+        "value": "Customer Support",
+        "count": 172,
+        "share": 0.0374
+      },
+      {
+        "value": "Sales",
+        "count": 161,
+        "share": 0.035
+      },
+      {
+        "value": "Legal & Compliance",
+        "count": 153,
+        "share": 0.0333
+      },
+      {
+        "value": "Marketing",
+        "count": 144,
+        "share": 0.0313
+      },
+      {
+        "value": "Other",
+        "count": 117,
+        "share": 0.0255
+      },
+      {
+        "value": "Human Resources",
+        "count": 98,
+        "share": 0.0213
+      },
+      {
+        "value": "Security",
+        "count": 95,
+        "share": 0.0207
+      },
+      {
+        "value": "Research",
+        "count": 77,
+        "share": 0.0168
+      },
+      {
+        "value": "Quality",
+        "count": 63,
+        "share": 0.0137
+      },
+      {
+        "value": "Administrative",
+        "count": 46,
+        "share": 0.01
+      },
+      {
+        "value": "Clinical & Medical",
+        "count": 39,
+        "share": 0.0085
+      }
+    ]
+  },
+  "by_seniority": {
+    "label": "Seniority",
+    "rows": [
+      {
+        "value": "Mid",
+        "count": 1407,
+        "share": 0.3061
+      },
+      {
+        "value": "Manager",
+        "count": 852,
+        "share": 0.1854
+      },
+      {
+        "value": "Senior",
+        "count": 684,
+        "share": 0.1488
+      },
+      {
+        "value": "Entry",
+        "count": 602,
+        "share": 0.131
+      },
+      {
+        "value": "Unknown",
+        "count": 445,
+        "share": 0.0968
+      },
+      {
+        "value": "Lead",
+        "count": 413,
+        "share": 0.0899
+      },
+      {
+        "value": "Director",
+        "count": 137,
+        "share": 0.0298
+      },
+      {
+        "value": "Executive",
+        "count": 29,
+        "share": 0.0063
+      },
+      {
+        "value": "Internship",
+        "count": 27,
+        "share": 0.0059
+      }
+    ]
+  },
+  "by_work_arrangement": {
+    "label": "Work Arrangement",
+    "rows": [
+      {
+        "value": "Onsite",
+        "count": 4194,
+        "share": 0.9125
+      },
+      {
+        "value": "Hybrid",
+        "count": 237,
+        "share": 0.0516
+      },
+      {
+        "value": "Remote",
+        "count": 165,
+        "share": 0.0359
+      }
+    ]
+  },
+  "by_employment_type": {
+    "label": "Employment Type",
+    "rows": [
+      {
+        "value": "Full-time",
+        "count": 3263,
+        "share": 0.71
+      },
+      {
+        "value": "Unknown",
+        "count": 1321,
+        "share": 0.2874
+      },
+      {
+        "value": "Contract",
+        "count": 10,
+        "share": 0.0022
+      },
+      {
+        "value": "Internship",
+        "count": 1,
+        "share": 0.0002
+      },
+      {
+        "value": "Temporary",
+        "count": 1,
+        "share": 0.0002
+      }
+    ]
+  },
+  "by_platform": {
+    "label": "Source Platform",
+    "rows": [
+      {
+        "value": "amazon",
+        "count": 2102,
+        "share": 0.4574
+      },
+      {
+        "value": "tcs",
+        "count": 1398,
+        "share": 0.3042
+      },
+      {
+        "value": "workday",
+        "count": 981,
+        "share": 0.2134
+      },
+      {
+        "value": "lever",
+        "count": 55,
+        "share": 0.012
+      },
+      {
+        "value": "smartrecruiters",
+        "count": 51,
+        "share": 0.0111
+      },
+      {
+        "value": "greenhouse",
+        "count": 9,
+        "share": 0.002
+      }
+    ]
+  },
+  "salary": {
+    "count": 2,
+    "min": 216000.0,
+    "median": 348000.0,
+    "max": 480000.0,
+    "currency": "INR"
+  }
+}

@@ -1,0 +1,13 @@
+﻿Company,Industry,Platform,Careers Portal,Portal Job Count (India scope),Jobs Extracted,Coverage %,Status,Notes
+Amazon,E-commerce & Cloud Computing,amazon,https://www.amazon.jobs/en/,2102,2103,100.0%,OK,Listed 2103 postings (portal reports 2102)
+Barclays,Banking & Financial Services,workday,https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays,282,282,100.0%,OK,No India facet discovered; falling back to full scan filtered on locationsText | Listed 282 India postings; fetching details
+Verizon,Telecommunications,workday,https://verizon.wd12.myworkdayjobs.com/verizon-careers,31,31,100.0%,OK,"India facet strategy: 'locationMainGroup/Locations' (facet='locations', 3 value(s)) | Listed 31 India postings; fetching details"
+NVIDIA,Semiconductors,workday,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite,248,248,100.0%,OK,"India facet strategy: 'locationMainGroup/Sites' (facet='locations', 6 value(s)) | Listed 248 India postings; fetching details"
+Cisco,Technology Hardware & Networking,workday,https://cisco.wd5.myworkdayjobs.com/Cisco_Careers,297,297,100.0%,OK,"India facet strategy: 'locationMainGroup/Locations' (facet='locations', 8 value(s)) | Listed 297 India postings; fetching details"
+Pfizer,Pharmaceuticals & Life Sciences,workday,https://pfizer.wd1.myworkdayjobs.com/PfizerCareers,27,27,100.0%,OK,"India facet strategy: 'country-facet' (facet='Location_Country', 1 value(s)) | Listed 27 India postings; fetching details"
+Salesforce,Enterprise Software,workday,https://salesforce.wd12.myworkdayjobs.com/External_Career_Site,96,96,100.0%,OK,"India facet strategy: 'country-facet' (facet='CF_-_REC_-_LRV_-_Job_Posting_Anchor_-_Country_from_Job_Posting_Location_Extended', 1 value(s)) | Listed 96 India postings; fetching details"
+Sutherland,IT Services & Business Process Management,smartrecruiters,https://jobs.smartrecruiters.com/Sutherland,52,52,100.0%,OK,Scanned 437 postings; 52 located in India
+Groww,Financial Technology (Fintech),greenhouse,https://boards.greenhouse.io/groww,9,9,100.0%,OK,Board returned 9 postings; 9 located in India
+Meesho,E-commerce & Internet,lever,https://jobs.lever.co/meesho,55,55,100.0%,OK,API returned 55 postings; 55 located in India
+Tata Consultancy Services,IT Services & Consulting,tcs,https://ibegin.tcsapps.com/candidate/next/en-IN/landing,1436,1426,99.3%,OK,iBegin index returned 1436 posting(s) across 29 page(s) | skipped 10 non-India posting(s)
+TOTAL,,,,4635,4626,99.8%,,

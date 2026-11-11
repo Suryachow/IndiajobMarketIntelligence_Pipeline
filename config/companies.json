@@ -1,0 +1,110 @@
+{
+  "$comment": "Company registry. Adding a new employer is a config-only change when it is hosted on one of the supported ATS platforms (workday, amazon, smartrecruiters, greenhouse, lever).",
+  "locale_timezone": "Asia/Kolkata",
+  "companies": [
+    {
+      "company_name": "Amazon",
+      "industry": "E-commerce & Cloud Computing",
+      "careers_url": "https://www.amazon.jobs/en/",
+      "extractor": "amazon",
+      "config": { "country": "IND" }
+    },
+    {
+      "company_name": "Barclays",
+      "industry": "Banking & Financial Services",
+      "careers_url": "https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays",
+      "extractor": "workday",
+      "config": {
+        "tenant": "barclays",
+        "wd": "wd3",
+        "site": "External_Career_Site_Barclays"
+      }
+    },
+    {
+      "company_name": "Verizon",
+      "industry": "Telecommunications",
+      "careers_url": "https://verizon.wd12.myworkdayjobs.com/verizon-careers",
+      "extractor": "workday",
+      "config": {
+        "tenant": "verizon",
+        "wd": "wd12",
+        "site": "verizon-careers"
+      }
+    },
+    {
+      "company_name": "NVIDIA",
+      "industry": "Semiconductors",
+      "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+      "extractor": "workday",
+      "config": {
+        "tenant": "nvidia",
+        "wd": "wd5",
+        "site": "NVIDIAExternalCareerSite"
+      }
+    },
+    {
+      "company_name": "Cisco",
+      "industry": "Technology Hardware & Networking",
+      "careers_url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers",
+      "extractor": "workday",
+      "config": {
+        "tenant": "cisco",
+        "wd": "wd5",
+        "site": "Cisco_Careers"
+      }
+    },
+    {
+      "company_name": "Pfizer",
+      "industry": "Pharmaceuticals & Life Sciences",
+      "careers_url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers",
+      "extractor": "workday",
+      "config": {
+        "tenant": "pfizer",
+        "wd": "wd1",
+        "site": "PfizerCareers"
+      }
+    },
+    {
+      "company_name": "Salesforce",
+      "industry": "Enterprise Software",
+      "careers_url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site",
+      "extractor": "workday",
+      "config": {
+        "tenant": "salesforce",
+        "wd": "wd12",
+        "site": "External_Career_Site"
+      }
+    },
+    {
+      "company_name": "Sutherland",
+      "industry": "IT Services & Business Process Management",
+      "careers_url": "https://jobs.smartrecruiters.com/Sutherland",
+      "extractor": "smartrecruiters",
+      "config": { "company": "Sutherland" }
+    },
+    {
+      "company_name": "Groww",
+      "industry": "Financial Technology (Fintech)",
+      "careers_url": "https://boards.greenhouse.io/groww",
+      "extractor": "greenhouse",
+      "config": { "board": "groww" }
+    },
+    {
+      "company_name": "Meesho",
+      "industry": "E-commerce & Internet",
+      "careers_url": "https://jobs.lever.co/meesho",
+      "extractor": "lever",
+      "config": { "company": "meesho" }
+    },
+    {
+      "company_name": "Tata Consultancy Services",
+      "industry": "IT Services & Consulting",
+      "careers_url": "https://ibegin.tcsapps.com/candidate/next/en-IN/landing",
+      "extractor": "tcs",
+      "config": {
+        "base_url": "https://ibegin.tcsapps.com/candidate/next",
+        "locale": "en-IN"
+      }
+    }
+  ]
+}
