@@ -12,9 +12,9 @@ from typing import Any, Dict, List
 
 # Ordered list of columns written to ``india_active_jobs_master.csv``.
 # The first block mirrors the fields requested in the assignment brief; the
-# second block adds provenance/lineage attributes used for reliability checks
-# and daily-refresh support. An empty cell ("") is emitted for a genuinely
-# missing value - we never fabricate data. The one explicit label we do write is
+# second block adds derived analytics and source platform information used by
+# the public dataset. An empty cell ("") is emitted for a genuinely missing
+# value - we never fabricate data. The one explicit label we do write is
 # :data:`SALARY_NOT_PUBLISHED` for the salary columns, so that "no amount
 # disclosed" is visible rather than looking like a parsing gap.
 CSV_FIELDS: List[str] = [
@@ -44,8 +44,6 @@ CSV_FIELDS: List[str] = [
     "seniority_level",
     # --- lineage / operational columns -------------------------------------
     "source_platform",
-    "source_company_slug",
-    "source_record_hash",
 ]
 
 # Columns that must always be populated for a record to be considered valid.

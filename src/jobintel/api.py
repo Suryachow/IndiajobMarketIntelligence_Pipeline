@@ -28,6 +28,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import parse_qs, unquote, urlparse
 
+from .normalize import slugify
 from .schema import CSV_FIELDS, has_salary
 from .trends import compute_trends
 
@@ -118,7 +119,8 @@ class Dataset:
             if (row.get("job_id", "") or "").strip().lower() == key:
                 return row
         for row in self.jobs:  # "<company_slug>:<job_id>" form
-            if row.get("source_company_slug", "").lower() + ":" + row.get("job_id", "").lower() == key:
+            company_slug = slugify(row.get("company_name", ""))
+            if company_slug + ":" + row.get("job_id", "").lower() == key:
                 return row
         return None
 
@@ -373,7 +375,7 @@ async function load() {
     const salary = (notPub(j.min_salary) && notPub(j.max_salary))
       ? 'Not published'
       : `${j.min_salary}${j.max_salary && j.max_salary !== j.min_salary ? ' - ' + j.max_salary : ''} ${j.currency || ''}`.trim();
-    const key = encodeURIComponent(`${j.source_company_slug || j.company_name}:${j.job_id}`);
+    const key = encodeURIComponent(`${j.company_name}:${j.job_id}`);
     return `<tr><td><a href="#" class="job-details" data-key="${key}">${esc(j.job_title)}</a></td>
       <td>${esc(j.company_name)}</td><td>${esc(j.job_location)}</td><td>${esc(j.job_family)}</td>
       <td>${esc(j.seniority_level)}</td><td>${esc(j.work_arrangement)}</td><td>${esc(salary)}</td></tr>`;

@@ -248,10 +248,10 @@ Every posting from every employer is normalized into the canonical
 | `job_family` | derived | Standardized job family (18 families, `Other` fallback) — see [§12](#12-advanced-capabilities-optional-challenge). |
 | `seniority_level` | derived | Standardized seniority (Executive…Internship); blank when the source carries no signal. |
 | `source_platform` | lineage | e.g. `workday`, `lever`. |
-| `source_company_slug` | lineage | Stable employer slug used for dedupe/pipeline keys. |
-| `source_record_hash` | lineage | Stable content hash (change detection & exact dedupe). |
 
-The file is written as **UTF-8 with BOM** (`utf-8-sig`) so it opens cleanly in Excel while
+Lineage keys used for deduplication and change detection are retained internally and in history
+snapshots, but are not exposed as CSV columns. The file is written as **UTF-8 with BOM**
+(`utf-8-sig`) so it opens cleanly in Excel while
 remaining valid UTF-8.
 
 ---
